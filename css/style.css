@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Comfortaa', cursive;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #4239CA;
+    color: #ffffff;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg_img{
+    height: 100vh;
+    flex: 2;
+    z-index: -1;
+}
+p , label{font-size: 14px; font-weight: 600;}
+h2 , p{font-weight: 600; padding: 5px 0px;}
+#acc{margin-bottom: 10px;}
+.bg_img img{
+    width: 100%;
+    height: 100%;
+}
+.cl_form{
+    flex: 1;
+    padding: 20px;
+}
+.input{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #7f8c8d;
+    border-radius: 5px;
+    margin: 6px 0px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.icon{
+    color: #7f8c8d;
+    padding: 0px 10px;
+}
+.btn_forgt_ps{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px 0px;
+    border: 1px solid #bdc3c7;
+}
+button:hover{
+    background-color: #4239CA;
+    border: 1px solid #bdc3c7;
+    color: #ffffff;
+}
+#forget_pass{
+    cursor: pointer;
+    transition: 0.3s;
+}
+#forget_pass:hover{
+    color: #bdc3c7;
+}
+.eye_open{cursor: pointer;}
+
+/* Responsive css */
+@media only screen and (max-width: 680px){
+    .btn_forgt_ps{
+        display: block;
+    }
+    img{opacity: 0.5;}
+    form{
+        z-index: 999;
+        transition: 0.3s all ease;
+        margin-left: -100px;
+    }
+}

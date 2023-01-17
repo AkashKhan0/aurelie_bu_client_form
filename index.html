@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login form </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="bg_img">
+            <img src="img/client_bg.webp" alt="form image">
+        </div>
+        <div class="cl_form">
+            <form action="">
+                <h2>Login</h2>
+                <p id="acc"> Your Account </p>
+                <label for="">Username:</label>
+                <div class="input">
+                    <div class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    <input type="text" name="username" id="username" required>
+                </div>
+
+                <label for="">Password:</label>
+                <div class="input">
+                    <div class="icon"><i class="fa fa-unlock" aria-hidden="true"></i></div>
+                    <input type="password" name="password" id="id_password" required>
+                    <div class="icon">
+                        <i class="eye_open fa fa-eye" id="togglePassword" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="btn_forgt_ps">
+                    <button>Login</button>
+                    <p id="forget_pass">Forget Password</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
